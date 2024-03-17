@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-size: 2vw;
+    width: 100vw;
+    color:white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height:10vh;
+    background-image:url("moviestrip.jpg");
+    
+    object-fit: cover;
+}
+#mName{
+    width: 20vw;
+}
+button i img{
+    height:1.5vh;
+    width:auto;
+}
+#threeLine {
+    display: none;
+}
+#threeLine i img{
+    height:2vh;
+    width:auto;
+}
+.lists{
+    font-size: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-decoration: none;
+    gap: 20px;
+    margin-right: 10px;
+}
+.lists a{
+    text-decoration: none;
+    color: white;
+}
+.fullinfo{
+    height: 85vh;
+    width:100%;
+    color:white;
+    background-color: rgb(1, 1, 1);
+    display:none;
+    
+}
+.infoOfMovie{
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+}
+.innerinfo{
+    font-size: 0.8vw;
+}
+.searchPoster{
+    margin-right: 5vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.searchPoster img{
+    margin-top: 2.5vh;
+    height: auto;
+    width: 40vw;
+    max-height: 80vh;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 85vh;
+    background-color: rgb(1, 1,1);
+}
+.info{
+    color:white;
+    width:37vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    height:85vh;
+    font-size: 2vw;
+}
+.info p{
+    width: 100%;
+}
+.smallhall img{
+ width: 37vw;
+ height: auto;
+}
+.aImage{
+    width: 60vw;
+    height: 85vh;
+    object-position: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.aImage img{
+    margin-top: 2.5vh;
+    width :40vw;
+    height: auto;
+    display: none;
+    margin-right: 10vw;
+}
+.foot{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color:black;
+    color: white;
+}
+@media screen and (max-width:550px){
+    nav{
+        font-size: 4vw;
+    }
+    #mName{
+        width: 40vw;
+    }
+    #threeLine{
+        display: block;
+    }
+    .lists{
+        display: none;
+    }
+    .container{
+        flex-direction: row-reverse;
+        height: fit-content;
+    }
+    .info{
+        font-size: 5vw;
+        width:100vw;
+        height:30vh;
+
+    }
+    .aImage{
+        width:100vw;
+    }
+    .aImage img{
+        width: 100vw;
+        height: auto;
+        margin: 0;
+    }
+    .fullinfo{
+        width: 100vw;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .infoOfMovie{
+        margin-left: 5vw;
+        margin-top: 5vw;
+        width:100vw;
+        height: 45vh;
+    }
+    .innerinfo{
+        width: 100vw;
+        font-size: 3vw;
+    }
+    .searchPoster{
+        width: 100vw;
+        height: fit-content;
+    }
+    .searchPoster img{
+
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        
+    }
+    }
